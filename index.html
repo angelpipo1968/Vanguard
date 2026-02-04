@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanguard | AI-Driven Cyber Intelligence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              primary: '#0F172A',   // Navy
+              secondary: '#1E293B', // Slate
+              cta: '#0369A1',       // Blue
+              accent: '#3B82F6',    // Bright Blue
+            },
+            status: {
+              success: '#10B981',
+              error: '#EF4444',
+              warning: '#F59E0B',
+              info: '#3B82F6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg-primary: #F8FAFC;
+      --bg-secondary: #FFFFFF;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+    }
+
+    .dark {
+      --bg-primary: #020617;
+      --bg-secondary: #0F172A;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border-color: #1E293B;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .glass-demo {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.5);
+    }
+
+    .dark .glass-demo {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(30, 41, 59, 0.5);
+    }
+
+    .hero-gradient {
+      background: radial-gradient(circle at top center, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+    }
+
+    .dark .hero-gradient {
+      background: radial-gradient(circle at top center, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+    }
+
+    .btn-shadow {
+      box-shadow: 0 4px 14px 0 rgba(3, 105, 161, 0.25);
+    }
+
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 10px; }
+    .dark ::-webkit-scrollbar-thumb { background: #334155; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+<body class="min-h-screen hero-gradient">
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>

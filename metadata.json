@@ -1,0 +1,7 @@
+{
+  "description": "Vanguard Intelligence Platform: A high-security dashboard for threat intelligence and log analysis powered by Gemini.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "name": "App"
+}
